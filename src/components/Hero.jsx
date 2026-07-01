@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { Play, Check } from 'lucide-react';
 import { Button } from './Button';
+import { assetUrl } from '../utils/assets';
 
 export function Hero({ onBook }) {
   const image = useRef(null);
@@ -19,7 +20,7 @@ export function Hero({ onBook }) {
     </div>
     <div className="hero-visual" onMouseMove={move} onMouseLeave={() => image.current.style.transform = ''}>
       <div className="orbit orbit--one"/><div className="orbit orbit--two"/>
-      <img ref={image} src="/images/hero-studio.webp" alt="Confident Pilates instructor in a sunlit luxury studio" width="1536" height="1024" fetchPriority="high" />
+      <img ref={image} src={assetUrl('images/hero-studio.webp')} alt="Confident Pilates instructor in a sunlit luxury studio" width="1536" height="1024" fetchPriority="high" />
       <div className="hero-note"><span>01</span><p><b>Purposeful movement.</b><br/>Exceptional guidance.</p></div>
       <div className="rating-pill"><b>4.9</b><span>★★★★★<small>Member rating</small></span></div>
     </div>

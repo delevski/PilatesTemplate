@@ -1,4 +1,5 @@
 import { ShieldCheck, Sparkles, Repeat2, Zap } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 export const values = [
   { title: 'Security', text: 'Professional guidance that keeps your body safe.', icon: ShieldCheck },
@@ -8,19 +9,19 @@ export const values = [
 ];
 
 export const experiences = [
-  { title: 'Private Sessions', text: 'Entirely yours. Every cue, every movement.', image: '/images/experience-private.webp', alt: 'Instructor guiding a private Pilates session' },
-  { title: 'Small Groups', text: 'Personal attention with shared energy.', image: '/images/experience-group.webp', alt: 'Women training together on Pilates reformers' },
-  { title: 'Reformer Pilates', text: 'Precision equipment. Intelligent resistance.', image: '/images/experience-reformer.webp', alt: 'Premium reformer Pilates equipment' },
-  { title: 'Functional Training', text: 'Strength that moves beautifully beyond the studio.', image: '/images/experience-functional.webp', alt: 'Functional strength session in a bright studio' },
-  { title: 'Recovery & Stretching', text: 'Restore range, ease and quiet confidence.', image: '/images/experience-recovery.webp', alt: 'Calm guided recovery and stretching session' },
+  { title: 'Private Sessions', text: 'Entirely yours. Every cue, every movement.', image: assetUrl('images/experience-private.webp'), alt: 'Instructor guiding a private Pilates session' },
+  { title: 'Small Groups', text: 'Personal attention with shared energy.', image: assetUrl('images/experience-group.webp'), alt: 'Women training together on Pilates reformers' },
+  { title: 'Reformer Pilates', text: 'Precision equipment. Intelligent resistance.', image: assetUrl('images/experience-reformer.webp'), alt: 'Premium reformer Pilates equipment' },
+  { title: 'Functional Training', text: 'Strength that moves beautifully beyond the studio.', image: assetUrl('images/experience-functional.webp'), alt: 'Functional strength session in a bright studio' },
+  { title: 'Recovery & Stretching', text: 'Restore range, ease and quiet confidence.', image: assetUrl('images/experience-recovery.webp'), alt: 'Calm guided recovery and stretching session' },
 ];
 
 export const testimonials = [
-  { name: 'Maya R.', role: 'Member for 14 months', quote: 'I came for my posture and stayed for the feeling. Every session is precise, personal and somehow leaves me standing taller—in every sense.', image: '/images/client-1.webp' },
-  { name: 'Noa L.', role: 'Private training', quote: 'The attention to detail is unlike anything I had experienced. I felt stronger after weeks, but more confident after the very first class.', image: '/images/client-2.webp' },
-  { name: 'Dana S.', role: 'Small group member', quote: 'Beautiful space, exceptional coaching, and a group size that never feels anonymous. This is the hour I protect every week.', image: '/images/client-3.webp' },
-  { name: 'Yael A.', role: 'Member for 8 months', quote: 'I was a complete beginner. The team made every movement approachable without ever making it feel easy or generic.', image: '/images/client-4.webp' },
-  { name: 'Liat K.', role: 'Reformer member', quote: 'The balance of calm and challenge is perfect. My back feels better, my body feels capable, and I genuinely look forward to training.', image: '/images/client-5.webp' },
+  { name: 'Maya R.', role: 'Member for 14 months', quote: 'I came for my posture and stayed for the feeling. Every session is precise, personal and somehow leaves me standing taller—in every sense.', image: assetUrl('images/client-1.webp') },
+  { name: 'Noa L.', role: 'Private training', quote: 'The attention to detail is unlike anything I had experienced. I felt stronger after weeks, but more confident after the very first class.', image: assetUrl('images/client-2.webp') },
+  { name: 'Dana S.', role: 'Small group member', quote: 'Beautiful space, exceptional coaching, and a group size that never feels anonymous. This is the hour I protect every week.', image: assetUrl('images/client-3.webp') },
+  { name: 'Yael A.', role: 'Member for 8 months', quote: 'I was a complete beginner. The team made every movement approachable without ever making it feel easy or generic.', image: assetUrl('images/client-4.webp') },
+  { name: 'Liat K.', role: 'Reformer member', quote: 'The balance of calm and challenge is perfect. My back feels better, my body feels capable, and I genuinely look forward to training.', image: assetUrl('images/client-5.webp') },
 ];
 
 export const plans = [
@@ -30,7 +31,7 @@ export const plans = [
 ];
 
 export const coach = {
-  name: 'Sophia Ben-Ami', role: 'Founder & Lead Instructor', image: '/images/coach.webp',
+  name: 'Sophia Ben-Ami', role: 'Founder & Lead Instructor', image: assetUrl('images/coach.webp'),
   bio: 'Sophia founded Lumina around one conviction: training should make you feel safe enough to become powerful. Her approach blends precise classical foundations with intelligent, modern movement.',
   stats: [['10+', 'Years coaching'], ['1,800+', 'Sessions guided'], ['4', 'Specialist certifications']],
   certifications: ['Comprehensive Reformer', 'Pre & Postnatal', 'Functional Movement', 'Mobility & Recovery'],
