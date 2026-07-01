@@ -1,0 +1,2 @@
+import { Button } from './Button';
+export function FinalCta({onBook}) { return <section className="final-cta"><div className="cta-orbit"/><span className="eyebrow">Your first session is waiting</span><h2>Invest in the Strongest<br/><em>Version of Yourself.</em></h2><p>One thoughtful decision can change how you move, stand and feel.</p><Button variant="light" onClick={onBook}>Book Your First Session</Button></section>; }

@@ -1,0 +1,5 @@
+import { Camera, Users, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { BrandMark } from './BrandMark';
+import { NAV_ITEMS, STUDIO_CONFIG as s } from '../config/studio';
+const CURRENT_YEAR = 2026;
+export function Footer(){return <footer id="contact"><div className="container footer-grid"><div className="footer-brand"><BrandMark/><p>{s.tagline}</p></div><div><b>Explore</b>{NAV_ITEMS.map(([l,id])=><a href={`#${id}`} key={id}>{l}</a>)}<a href="#faq">FAQ</a></div><div><b>Visit & connect</b><a href={`mailto:${s.email}`}><Mail/> {s.email}</a><a href={`tel:${s.phoneDisplay}`}><Phone/> {s.phoneDisplay}</a><span><MapPin/> {s.location}</span></div><div><b>Follow</b><a href={s.instagramUrl}><Camera/> Instagram</a><a href={s.facebookUrl}><Users/> Facebook</a><a href={`https://wa.me/${s.whatsappNumber}`}><MessageCircle/> WhatsApp</a></div></div><div className="footer-bottom container" id="privacy"><span>© {CURRENT_YEAR} LUMINA PILATES</span><span>Sample website · Contact details pending confirmation</span><a href="#privacy">Privacy Policy</a></div></footer>}
