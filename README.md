@@ -30,6 +30,14 @@ To connect a webhook or CRM, set `LEAD_ENDPOINT` to the endpoint URL. `submitLea
 
 For production, route the request through a protected server or serverless function rather than exposing private CRM credentials in the browser.
 
+## Lumina chat advisor
+
+The floating bilingual advisor answers questions about Pilates, membership pricing, general availability and choosing the right session. It runs from trusted local studio content when `CHAT_ENDPOINT` is empty, so the complete demo works on GitHub Pages without exposing credentials.
+
+Configure general availability and the future endpoint in `src/config/chat.js`. A real AI integration should use a protected server or serverless endpoint; never place an API key in frontend code. Booking intent reveals an explicit contact form that reuses the existing lead integration boundary.
+
+Medical responses are intentionally limited to general safety information and do not provide diagnosis or replace a physician or physiotherapist.
+
 ## Images
 
 Optimized WebP assets are stored in `public/images`. Keep the existing filenames to replace photography without modifying components, or update the paths and alt text in `src/data/content.js`.
