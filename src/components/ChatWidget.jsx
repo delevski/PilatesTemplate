@@ -85,7 +85,7 @@ export function ChatWidget({ initialLanguage, sendMessage = sendChatMessage, sub
 
   return <>
     <button ref={triggerRef} type="button" className="chat-trigger" aria-label="Ask Lumina" aria-expanded={open} onClick={() => setOpen(value => !value)}>
-      <Sparkles/><span className="chat-trigger-label" aria-hidden="true">Ask Lumina</span>
+      <Sparkles/><span className="chat-trigger-label floating-label" aria-hidden="true">Ask Lumina</span>
     </button>
     {open && <section className="chat-panel" role="dialog" aria-modal="false" aria-labelledby="chat-title" onKeyDown={event => event.key === 'Escape' && closeChat()} dir={direction}>
       <header className="chat-header">

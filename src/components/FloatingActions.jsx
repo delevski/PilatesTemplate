@@ -1,4 +1,4 @@
 import { ArrowUp, MessageCircle } from 'lucide-react';
 import { STUDIO_CONFIG } from '../config/studio';
 import { ChatWidget } from './ChatWidget';
-export function FloatingActions({showBackToTop}) {return <div className="floating-actions"><ChatWidget/><a className="float-whatsapp" href={`https://wa.me/${STUDIO_CONFIG.whatsappNumber}`} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><MessageCircle/></a><button type="button" className={showBackToTop?'is-visible':''} onClick={()=>scrollTo({top:0,behavior:'smooth'})} aria-label="Back to top"><ArrowUp/></button></div>}
+export function FloatingActions({showBackToTop}) {return <div className="floating-actions"><ChatWidget/><a className="float-whatsapp" href={`https://wa.me/${STUDIO_CONFIG.whatsappNumber}`} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><MessageCircle/><span className="floating-label" aria-hidden="true">WhatsApp</span></a><button type="button" className={showBackToTop?'is-visible':''} onClick={()=>scrollTo({top:0,behavior:'smooth'})} aria-label="Back to top"><ArrowUp/></button></div>}
