@@ -2,6 +2,10 @@
 
 Premium one-page React/Vite website for a boutique Pilates studio.
 
+[![LUMINA PILATES — Move with Confidence](public/images/lumina-social-preview.jpg)](https://delevski.github.io/PilatesTemplate/)
+
+**[View the live website](https://delevski.github.io/PilatesTemplate/)**
+
 ## Run locally
 
 ```bash
